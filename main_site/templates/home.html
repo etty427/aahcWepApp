@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en" class=" js no-touch">
 
@@ -5,12 +6,14 @@
   <title>All About Healthcare</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/mycss.css">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/base.css' %}" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mycss.css' %}">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:600,300|Josefin+Slab:400,700,600italic,600,400italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="css/slick-team-slider.css" />
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/slick-team-slider.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
   <!-- =======================================================
     Theme Name: Tempo
     Theme URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
@@ -459,11 +462,11 @@
             Designed by <a href="https://bootstrapmade.com/"></a><a href="http://rainmantechnologies.com">Rainman Technologies</a>
 			Logo by <a href="https://www.facebook.com/LiveCityPromo/">LiveCity</a><br>© Copyright, All Rights Reserved. </p>
     </div>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/slick.min.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/slick.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
   <script src="contactform/contactform.js"></script>
 <!-- Calling jquery first -->
 <script language="JavaScript" type="text/javascript" src="scripts/jquery.js"></script>
