@@ -1,2 +1,1 @@
-release: python manage.py migrate
-web: gunicorn aahcwebapp.wsgi --log-file -
+web: gunicorn aahc_website.wsgi --log-file -
